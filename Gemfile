@@ -29,6 +29,9 @@ gem 'enumerate_it', '~> 1.2.0'
 #gem 'pg', '~> 0.17.1'
 gem 'pg'
 
+gem 'devise', '~> 3.5', '>= 3.5.2'
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 group :doc do
   gem 'sdoc', require: false
 end
