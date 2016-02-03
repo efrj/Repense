@@ -1,15 +1,19 @@
 development:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   database: proficiency-test_development
   pool: 5
+  host: localhost
   username: postgres
-  password: "1234"
+  password: 1234
+  port: 5432
 
 test:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   database: proficiency-test_test
   pool: 5
+  host: localhost
   username: postgres
-  password: "1234"
+  password: 1234
+  port: 5432
