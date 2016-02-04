@@ -1,0 +1,12 @@
+<table class="index_table index">
+    <tr>
+        <th>Curso</th>
+        <th>Status</th>
+    </tr>
+    <% courses.each do |c| %>
+    <tr>
+        <td><a href="/admin/courses/<%=c.id%>"><%=c.name%></a></td>
+        <td><%=c.status_option%></td>
+    </tr>
+    <% end %>
+</table>

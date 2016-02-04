@@ -1,17 +1,21 @@
 ActiveAdmin.register Classroom do
 
-# See permitted parameters documentation:
-# https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-#
-# permit_params :list, :of, :attributes, :on, :model
-#
-# or
-#
-# permit_params do
-#   permitted = [:permitted, :attributes]
-#   permitted << :other if resource.something?
-#   permitted
-# end
+    permit_params :student_id, :course_id, :entry_at
 
+    config.filters = false
+
+    index do
+        @courses = Course.all
+        render :partial => 'list_courses', :locals => {:courses => @courses }
+    end
+
+    form do |f|
+        f.inputs do
+            f.input :student
+            f.input :course
+            f.input :entry_at, as: :datepicker
+        end
+        f.actions
+    end
 
 end

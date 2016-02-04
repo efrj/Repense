@@ -1,0 +1,12 @@
+<h2>Student</h2>
+
+<h3><%=@student.name%></h3>
+<h3><strong>Register Number:</strong> <%=@student.register_number%></h3>
+<h3><strong>Status:</strong> <%=@student.status_option%></h3>
+
+<h2>Cursos deste estudante</h2>
+<ul>
+    <%Classroom.where(student: @student.id).each do |c|%>
+    <li><%=c.course.name%></li>
+    <%end%>
+</ul>
