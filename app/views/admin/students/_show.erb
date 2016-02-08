@@ -7,6 +7,6 @@
 <h2>Cursos deste estudante</h2>
 <ul>
     <%Classroom.where(student: @student.id).each do |c|%>
-    <li><%=c.course.name%></li>
+    <li><a href="/admin/courses/<%=c.course.id%>"><%=c.course.name%></a></li>
     <%end%>
 </ul>

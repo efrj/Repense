@@ -7,6 +7,6 @@
 <h2>Estudantes matriculados neste curso</h2>
 <ul>
     <% @classroom.each do |s| %>
-    <li><%=s.student.name%></li>
+    <li><a href="/admin/students/<%=s.student.id%>"><%=s.student.name%></a></li>
     <%end%>
 </ul>
