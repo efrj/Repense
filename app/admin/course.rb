@@ -20,7 +20,8 @@ ActiveAdmin.register Course do
     end
 
     show do
-        render 'show'
+        @classroom = Classroom.where(course: course.id)
+        render :partial => 'show', :locals => {:@classroom => @classroom}
     end
 
 end

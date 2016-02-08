@@ -6,7 +6,7 @@
 
 <h2>Estudantes matriculados neste curso</h2>
 <ul>
-    <%Classroom.where(course: @course.id).each do |s|%>
+    <% @classroom.each do |s| %>
     <li><%=s.student.name%></li>
     <%end%>
 </ul>
