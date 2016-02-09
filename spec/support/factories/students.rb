@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :student do
-    name "MyString"
-    register_number "MyString"
+    name "Arnaldo Antunes da Silva"
+    register_number "16100001"
     status 1
   end
 end

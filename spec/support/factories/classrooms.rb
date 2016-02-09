@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :classroom do
-    student nil
-    course nil
-    entry_at "2016-02-02 21:53:13"
+    student 1
+    course 1
+    entry_at "2016-02-08 11:31:13"
   end
 end
