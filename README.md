@@ -1,2 +1,2 @@
 # Repense
-Simple register example
+Simple register example for students, courses and classrooms
