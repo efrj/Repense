@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   get '/' => 'pages#index'
+  get '/sobre' => 'pages#about'
 
 end
